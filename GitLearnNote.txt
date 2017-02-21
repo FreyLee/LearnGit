@@ -32,3 +32,21 @@
     HEAD是参照点,命令执行后,缓冲区中filename的状态与HEAD中filename的状态相同
 - git rm [filename]
     从版本库中删除指定文件,同时也会删除工作区文件
+- git remote add origin [address]
+    添加一个远程仓库,origin是仓库名,address是远程仓库地址
+    可用git remote get-url origin查看已添加的地址
+    也可用git remote set-url origin [address]添加新的地址,可以添加多个仓库地址,push时就会push到每个远程仓库
+- git push origin [branch]
+    推送本地分支到远程仓库,origin是远程库名,branch是要推送的分支
+    第一次推送一个分支时可以加上-u选项,这样会将这个分支与远程仓库关联起来
+- git branch [branchname]
+    查看/新建分支
+    如果传入branchname参数,则以此名创建一个新的分支
+    可以用-d参数删除一个分支
+- git checkout [branch]
+    切换分支
+    可以使用-b选项创建并切换到一个新的分支
+- git merge [branch]
+    合并分支,将指定分支合并到当前分支
+
+
