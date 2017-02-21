@@ -3,5 +3,3 @@ for learn git
 add a line 
 another new line
 [HEAD]
-[Cached]
-[WorkSpace]
