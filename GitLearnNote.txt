@@ -13,7 +13,7 @@
 - git diff [arg] --[filename]
     查看一个文件的不同之处
     如果arg为文件名,则将其与缓存区中的内容比较,且不可传入filename
-    如果arg为HEAD,cached等标志,则将标志的内容与对应的文件内容相比较,例如传入标记cached,则将缓冲区中所有文件与对应的工作区中的文件比较
+    如果arg为HEAD,则将标志的内容与对应的文件内容相比较
 - git log [--pretty=oneline]
     查看提交历史,历史内容会随回退而改变
     --pretty=oneline参数的作用是调整输出内容的格式,使之更简洁
@@ -28,4 +28,3 @@
     如果指定文件没有被add,则会撤销至版本库中的状态
     如果已经被add但没有commit,则会撤销至上一次add的状态
 - git rest HEAD [filename]
-    
