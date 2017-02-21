@@ -38,7 +38,7 @@
     也可用git remote set-url origin [address]添加新的地址,可以添加多个仓库地址,push时就会push到每个远程仓库
 - git push origin [branch]
     推送本地分支到远程仓库,origin是远程库名,branch是要推送的分支
-    第一次推送一个分支时可以加上-u选项,这样会将这个分支与远程仓库关联起来
+    第一次推送一个分支时可以加上-u选项,这样会将这个分支与远程仓库关联起来,之后就可以用git push直接推送,简化输入的命令
 - git branch [branchname]
     查看/新建分支
     如果传入branchname参数,则以此名创建一个新的分支
