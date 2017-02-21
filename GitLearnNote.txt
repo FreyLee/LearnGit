@@ -18,7 +18,7 @@
     查看提交历史,历史内容会随回退而改变
     --pretty=oneline参数的作用是调整输出内容的格式,使之更简洁
 - git reset --hard HEAD^
-    版本回退,将所有文件回退至指定版本时的状态
+    版本回退,将所有文件回退(跳转)至指定版本时的状态
     HEAD代表当前版本,^表示-1,多个^可以向前回退多个版本(HEAD^^^),也可以使用~n来回退n个版本(HEAD~5)
     当需要回退到指定版本时,可以使用目标版本的commit id来回退(git reset --hard ea34578),commit id可以从git log或git reflog命令获得
 - git reflog
@@ -27,4 +27,6 @@
     将文件的内容撤销修改至缓冲区中的状态,即用缓冲区中此文件的内容覆盖工作区中此文件的内容
     如果指定文件没有被add,则会撤销至版本库中的状态
     如果已经被add但没有commit,则会撤销至上一次add的状态
-- git rest HEAD [filename]
+- git reset HEAD [filename]
+    撤销指定文件的添加,撤销此文件已add到缓冲区的修改,不会修改工作区的内容
+    HEAD是参照点,命令执行后,缓冲区中filename的状态与HEAD中filename的状态相同
