@@ -30,3 +30,5 @@
 - git reset HEAD [filename]
     撤销指定文件的添加,撤销此文件已add到缓冲区的修改,不会修改工作区的内容
     HEAD是参照点,命令执行后,缓冲区中filename的状态与HEAD中filename的状态相同
+- git rm [filename]
+    从版本库中删除指定文件,同时也会删除工作区文件
